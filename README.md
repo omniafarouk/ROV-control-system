@@ -18,18 +18,6 @@ This project implements a modular and multithreaded GUI using PyQt5 that serves 
 
 ## Features
 
-### GUI Control Modes
-- **Manual Mode**: Directional movement buttons, speed selection, and start/stop controls.
-- **Autonomous Mode**: Sensor-based display (voltage, current, distance readings).
-
-### Serial Communication
-- Bi-directional communication with an Arduino over a serial port (`pyserial`).
-- Commands and sensor readings are handled via encoded strings.
-
-### Live Camera Feed
-- Real-time webcam display using OpenCV.
-- Capture screenshots directly from the UI.
-
 ### Video Stitching (Multithreaded)
 - Load and stitch two video streams using OpenCV’s Stitcher.
 - Scrollable stitched view; fullscreen toggle supported.
@@ -48,9 +36,8 @@ This project implements a modular and multithreaded GUI using PyQt5 that serves 
 ## Technologies Used
 
 - Python 3.8+
-- PyQt5
+- PyQt6
 - OpenCV
-- PySerial
 - OOP / Threading / Qt Designer
 
 ---
