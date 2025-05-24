@@ -6,7 +6,7 @@ An advanced Python-based GUI system for controlling a Remotely Operated Vehicle 
 
 ##  Overview
 
-This project implements a modular and multithreaded GUI using PyQt5 that serves as the main interface for controlling and monitoring an ROV. Key components include:
+This project implements a modular and multithreaded GUI using PyQt6 that serves as the main interface for controlling and monitoring an ROV. Key components include:
 
 - Manual and Autonomous car control
 - Live webcam feed and screenshots
