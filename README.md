@@ -2,7 +2,7 @@
 
 An advanced Python-based GUI system for controlling a Remotely Operated Vehicle (ROV), featuring multithreaded video stitching, stereo vision depth estimation, and real-time serial communication with an Arduino.
 
-** For more information about the project read the project report pdf attached
+-- For more information about the project read the project report pdf attached
 
 ---
 
