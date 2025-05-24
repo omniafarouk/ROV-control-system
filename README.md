@@ -55,8 +55,8 @@ This project implements a modular and multithreaded GUI using PyQt5 that serves 
 
 ---
 
-# To run StereoVision project --> run MainStereoVisionWindow (ensure you have sufficient different views of the same image)
-# To run VideoStitching project --> run MainCameraSystemGUI (ensure you have different videos of 2 pov of the same view)
+* To run StereoVision project --> run MainStereoVisionWindow (ensure you have sufficient different views of the same image)
+* To run VideoStitching project --> run MainCameraSystemGUI (ensure you have different videos of 2 pov of the same view)
 
 ## Project Structure
 
