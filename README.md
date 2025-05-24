@@ -45,7 +45,7 @@ This project implements a modular and multithreaded GUI using PyQt5 that serves 
 
 ---
 
-## 🧠 Technologies Used
+## Technologies Used
 
 - Python 3.8+
 - PyQt5
@@ -59,6 +59,8 @@ This project implements a modular and multithreaded GUI using PyQt5 that serves 
 ## To run VideoStitching project --> run MainCameraSystemGUI (ensure you have different videos of 2 pov of the same view)
 
 ## Project Structure
+
+``` bash
 
 ├── video_stitching       # Multithreaded video stitching logic
 |  ├── camera_state.py
