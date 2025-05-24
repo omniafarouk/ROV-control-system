@@ -55,18 +55,23 @@ This project implements a modular and multithreaded GUI using PyQt5 that serves 
 
 ---
 
+## To run StereoVision project --> run MainStereoVisionWindow (ensure you have sufficient different views of the same image)
+## To run VideoStitching project --> run MainCameraSystemGUI (ensure you have different videos of 2 pov of the same view)
+
 ## Project Structure
 
-```bash
-.
-├── frontendtest.py           # Main window GUI (Qt Designer converted)
-├── backendtest1.py          # Backend logic and window switching
-├── video_stitching.py       # Multithreaded video stitching logic
-├── stereo_vision/           # Modules for stereo vision pipeline
+├── video_stitching       # Multithreaded video stitching logic
+|  ├── camera_state.py
+|  ├── createViewThread.py
+|  ├── FileExplorerDialogue.py
+|  ├── MainCameraSystemGui.py
+|  ├── New_View.py
+├── stereo_vision           # Modules for stereo vision pipeline
 │   ├── calibration.py
 │   ├── rectification.py
 │   ├── disparity.py
-│   ├── depth.py
-│   └── utils.py
-├── ROV_GUI_Project_Report.pdf  # Full technical report
-└── README.md
+│   ├── depthComputation.py
+│   ├── StereoVisionProcess
+│   ├── MainStereoVisionWindow.py
+│   ├── utilities.py
+
