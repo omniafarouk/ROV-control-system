@@ -60,20 +60,20 @@ This project implements a modular and multithreaded GUI using PyQt5 that serves 
 * To run StereoVision project --> run "MainStereoVisionWindow.py" (ensure you have sufficient different views of the same image)
 * To run VideoStitching project --> run "MainCameraSystemGUI.py" (ensure you have different videos of 2 pov of the same view)
   
-## Project IDea Structure 
+## Project Idea Structure 
 
 ``` bash
 ├── autonomousFrontend.py
 ├── backendtest.py
 ├── frontendManual.py
 ├── frontendtest.py
-├── video_stitching       # Multithreaded video stitching logic
+├── video_stitching feature     # Multithreaded video stitching logic
 |  ├── camera_state.py
 |  ├── createViewThread.py
 |  ├── FileExplorerDialogue.py
 |  ├── MainCameraSystemGui.py
 |  ├── New_View.py
-├── stereo_vision           # Modules for stereo vision pipeline
+├── stereo_vision feature          # Modules for stereo vision pipeline
 │   ├── calibration.py
 │   ├── rectification.py
 │   ├── disparity.py
