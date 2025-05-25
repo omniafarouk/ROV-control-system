@@ -31,7 +31,14 @@ class MainWindow(QMainWindow):
                     print(f"error occurred during fixing path {e}")
                     self.left_video_path = None
             else:
-                print("repeat reading left video path")
+                reply = QMessageBox.question(self, 'No video chosen',
+                                             'No video was chosen , Do you want to exit?',
+                                             QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                                             QMessageBox.StandardButton.No)
+                if reply == QMessageBox.StandardButton.Yes:
+                    exit(1)
+                else:
+                    print("repeat reading right video path")
 
         while self.right_video_path is None:
             self.right_video_path = self.Select_video_path("Right")
@@ -43,7 +50,14 @@ class MainWindow(QMainWindow):
                     print(f"error occurred during fixing path{e}")
                     self.right_video_path = None
             else:
-                print("repeat reading right video path")
+                reply = QMessageBox.question(self, 'No video chosen',
+                                             'No video was chosen , do you want to exit?',
+                                             QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                                             QMessageBox.StandardButton.No)
+                if reply == QMessageBox.StandardButton.Yes:
+                    exit(1)
+                else:
+                    print("repeat reading right video path")
 
         print("creating instance")
         # Create an instance of a QLabel class to show left view and its scroll bar
@@ -100,11 +114,11 @@ class MainWindow(QMainWindow):
             window = FileDialogue()
             video_path = FileDialogue().Open_File_dialogue()
             window.show()
-            print(f"path before fixing is {video_path}")
             return video_path
 
         else:
             return None
+
     def handle_video_path(self, path_tuple):
         video_path, _ = path_tuple
         return pathlib.Path(video_path[0])
@@ -119,7 +133,7 @@ class MainWindow(QMainWindow):
         # Create an instance of a QGridLayout layout.
         grid_layout = QGridLayout()
         grid_layout.setContentsMargins(0, 0, 0, 0)
-        grid_layout.addWidget(self.left_view_gui.QScrollArea, 0,0)
+        grid_layout.addWidget(self.left_view_gui.QScrollArea, 0, 0)
         grid_layout.addWidget(self.right_view_gui.QScrollArea, 0, 1)
         grid_layout.addWidget(self.stitched_view_gui.QScrollArea, 1, 0)
 
@@ -199,7 +213,7 @@ class MainWindow(QMainWindow):
         reply = QMessageBox.question(self, 'Exit Application',
                                      'Are you sure you want to exit?',
                                      QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
-                                     QMessageBox.StandardButton.No)
+                                     QMessageBox.StandardButton.YES)
 
         if reply == QMessageBox.StandardButton.Yes:
             # Perform cleanup
